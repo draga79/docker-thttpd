@@ -9,4 +9,5 @@ WORKDIR /var/www/http
 
 EXPOSE 80
 
-ENTRYPOINT thttpd -D
+ENTRYPOINT ["/bin/thttpd", "-D", "-l", "/dev/stderr"]
+CMD ["-d", "/var/www/http"]
