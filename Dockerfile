@@ -9,5 +9,5 @@ WORKDIR /var/www/http
 
 EXPOSE 80
 
-ENTRYPOINT ["/bin/thttpd"]
+ENTRYPOINT ["/usr/sbin/thttpd"]
 CMD ["-C", "/etc/thttpd.conf"]
